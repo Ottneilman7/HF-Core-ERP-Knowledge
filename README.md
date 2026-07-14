@@ -1,3 +1,17 @@
+# HF Core ERP Knowledge
+
+Repositorio oficial de documentación del proyecto HF Core ERP.
+
+Autor:
+Otto Manrique
+
+Arquitecto de Software:
+ChatGPT
+
+Versión:
+0.1.0
+
+
 # HF-Core-ERP-Knowledge
 Contendrá toda la documentación (EAR, Blueprints, Manuales, ADR, Roadmap, Tutor IA, etc.).
 
@@ -13,3 +27,4 @@ Entregable	Contenido
 📋 ADR (Architecture Decision Record)	Decisiones técnicas importantes tomadas en ese sprint.
 🧪 Checklist de pruebas	Qué debes verificar antes de considerar el módulo terminado.
 💾 Commit sugerido	El mensaje exacto para registrar el cambio en Git.
+
