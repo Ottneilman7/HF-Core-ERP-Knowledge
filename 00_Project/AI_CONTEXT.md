@@ -329,3 +329,42 @@ Primero se entrega valor.
 Después se optimiza.
 
 Fin del Documento.
+
+
+## Estado Actual del Proyecto 16/07/2026
+
+Arquitectura estable.
+
+El proyecto utiliza:
+
+- React
+- TypeScript
+- Vite
+- React Router
+
+Arquitectura:
+
+App
+↓
+AppRouter
+↓
+MainLayout
+↓
+Pages
+
+Componentes implementados:
+
+- InventoryPage
+- ProductsPage
+- CustomersPage
+
+Modelos:
+
+- RawMaterial
+- Product
+- Customer
+
+El siguiente entregable será:
+
+ENT-009
+Recetas de Producción (Bill of Materials)

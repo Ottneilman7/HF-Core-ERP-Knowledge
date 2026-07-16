@@ -387,3 +387,41 @@ HF-CORE-ERP ✅
 HF-Core-ERP-Knowledge ✅
 
 ---
+
+## ENT-008 — Customer Master Module
+
+Estado: ✅ Finalizado
+
+Objetivo:
+Implementar el Catálogo Maestro de Clientes.
+
+Incluye:
+
+- Modelo Customer
+- Datos de ejemplo
+- CustomersPage
+- Indicadores
+- Prioridad de atención
+- Arquitectura preparada para Motor de Decisiones
+
+Repositorio:
+HF-CORE-ERP
+
+## ENT-008A — Arquitectura de Navegación
+
+Estado: ✅ Finalizado
+
+Objetivo:
+Implementar la navegación profesional del ERP mediante React Router.
+
+Incluye:
+
+- React Router DOM
+- AppRouter
+- Sidebar conectado
+- Navegación entre módulos
+- Arquitectura desacoplada
+
+Resultado:
+
+El crecimiento del ERP ya no requiere modificar App.tsx.
