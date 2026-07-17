@@ -151,7 +151,52 @@ HF Core ERP no es solamente software.
 Es una plataforma de crecimiento empresarial.
 
 Toda decisión debe acercarnos a ese objetivo.
+---
+# Regla 16
 
+Una sola fuente de verdad.
+
+---
+# Regla 17
+
+No duplicar documentación.
+---
+
+# REGLA 18 Consideración importante:
+
+Los documentos del repositorio de conocimiento tendrán una única responsabilidad, un único propósito.
+
+Ningún documento duplicará información cuyo origen oficial sea otro documento.
+
+Esa regla, aplicada durante todo el proyecto, evitará que la documentación se vuelva inconsistente.
+
+# Regla 19 FLUJO OFICIAL DE TRABAJO
+
+Idea
+        ↓
+Validación con PRODUCT_VISION
+        ↓
+Blueprint
+        ↓
+Revisión CEO
+        ↓
+Aprobación
+        ↓
+Implementación
+        ↓
+Pruebas
+        ↓
+Actualizar Blueprint
+        ↓
+Actualizar PROJECT_STATUS
+        ↓
+Actualizar CHANGELOG
+        ↓
+Commit
+        ↓
+Push
+        ↓
+Cerrar ENT
 ---
 
 Fin del Documento.

@@ -314,8 +314,6 @@ Toda decisión debe acercar al proyecto a ese objetivo.
 
 ---
 
----
-
 # Regla del 80/20
 
 La IA deberá priorizar siempre entregar una solución funcional que resuelva el 80% del problema con el 20% del esfuerzo.
@@ -328,43 +326,15 @@ Primero se entrega valor.
 
 Después se optimiza.
 
+# Cómo Colaaborar con este Proyecto
+
+Indicando:
+
+Leer START_HERE.
+Leer PROJECT_STATUS.
+Revisar Blueprint.
+Revisar ADR.
+Programar. 
+
+
 Fin del Documento.
-
-
-## Estado Actual del Proyecto 16/07/2026
-
-Arquitectura estable.
-
-El proyecto utiliza:
-
-- React
-- TypeScript
-- Vite
-- React Router
-
-Arquitectura:
-
-App
-↓
-AppRouter
-↓
-MainLayout
-↓
-Pages
-
-Componentes implementados:
-
-- InventoryPage
-- ProductsPage
-- CustomersPage
-
-Modelos:
-
-- RawMaterial
-- Product
-- Customer
-
-El siguiente entregable será:
-
-ENT-009
-Recetas de Producción (Bill of Materials)

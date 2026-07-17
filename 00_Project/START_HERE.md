@@ -1,96 +1,119 @@
 # HF Core ERP
 
-## START HERE
+**Documento:** START_HERE
 
-Bienvenido al proyecto **HF Core ERP**.
+**Versión:** 1.0
 
-Este repositorio contiene la documentación oficial del sistema.
-
-Antes de realizar cualquier modificación en el código o en la documentación, lee los documentos en el siguiente orden.
+**Última actualización:** 17/07/2026
 
 ---
 
-# Orden de lectura obligatorio
+# Bienvenido
 
-1. PROJECT_INDEX.md
+Este documento es el punto de entrada oficial al proyecto **HF Core ERP**.
 
-Describe la estructura completa del proyecto.
-
----
-
-2. PROJECT_STATUS.md
-
-Indica el estado actual del desarrollo y el siguiente objetivo.
+Antes de realizar cualquier cambio en el código o en la documentación, sigue el siguiente proceso.
 
 ---
 
-3. AI_CONTEXT.md
+# Paso 1 — Comprender el estado del proyecto
 
-Define la metodología de trabajo que debe seguir cualquier asistente de IA o desarrollador.
+Leer:
 
----
+PROJECT_STATUS.md
 
-4. TEAM_RULES.md
+Aquí conocerás:
 
-Contiene las reglas de desarrollo del proyecto.
-
----
-
-5. ROADMAP.md
-
-Explica la planificación general del ERP.
+- Estado actual del desarrollo.
+- Sprint activo.
+- Última entrega completada.
+- Próxima entrega.
+- Bloqueos (si existen).
 
 ---
 
-# Filosofía del proyecto
+# Paso 2 — Revisar el índice del proyecto
 
-HF Core ERP no es únicamente un ERP para Honestly Foods CA.
+Leer:
 
-Es un producto de software diseñado para ayudar a Startups, Emprendedores y PyMEs a controlar su negocio desde sus primeras etapas de crecimiento.
+PROJECT_INDEX.md
 
-El proyecto prioriza:
-
-- simplicidad
-- escalabilidad
-- reutilización de código
-- documentación permanente
-- arquitectura modular
-- desarrollo incremental
+Aquí encontrarás la estructura completa de la documentación y la ubicación de todos los documentos oficiales.
 
 ---
 
-# Repositorios oficiales
+# Paso 3 — Comprender el contexto del proyecto
+
+Leer:
+
+AI_CONTEXT.md
+
+Este documento define:
+
+- Filosofía del producto.
+- Metodología de desarrollo.
+- Tecnologías utilizadas.
+- Principios de arquitectura.
+- Forma de colaboración entre el CEO y el CTO.
+
+---
+
+# Paso 4 — Revisar el Blueprint activo
+
+Antes de desarrollar una funcionalidad, identificar el Blueprint correspondiente.
+
+El Blueprint define:
+
+- Objetivo del módulo.
+- Alcance.
+- Reglas de negocio.
+- Dependencias.
+- Estado del desarrollo.
+
+---
+
+# Paso 5 — Revisar las decisiones de arquitectura
+
+Leer los ADR relacionados con el módulo que será modificado.
+
+Nunca implementar cambios que contradigan una decisión arquitectónica previamente aprobada.
+
+---
+
+# Paso 6 — Abrir el repositorio del código
+
+Repositorio:
 
 HF-CORE-ERP
 
-Contiene únicamente el código fuente.
+Toda la implementación vive en este repositorio.
+
+HF-Core-ERP-Knowledge únicamente documenta el proyecto.
 
 ---
 
-HF-Core-ERP-Knowledge
+# Antes de comenzar
 
-Contiene toda la documentación funcional, técnica y arquitectónica.
+Verificar siempre:
 
----
+✓ Existe Blueprint.
 
-# Convenciones
+✓ El Blueprint está actualizado.
 
-Todos los entregables deberán generar:
+✓ No existe una ADR que afecte el cambio.
 
-- Código
-- Blueprint
-- ADR (si aplica)
-- Registro en CHANGELOG
-- Actualización del PROJECT_INDEX
+✓ El PROJECT_STATUS refleja el estado actual.
 
 ---
 
-Última actualización
+# Regla de Oro
 
-Versión del proyecto:
+Si una decisión importante no quedó documentada, la decisión no existe.
 
-0.1.0
+La documentación es parte del producto.
 
-Estado:
+---
 
-En desarrollo.
+**Siguiente documento a consultar:**
+
+PROJECT_STATUS.md

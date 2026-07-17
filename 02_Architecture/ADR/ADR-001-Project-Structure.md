@@ -7,3 +7,15 @@ Ventas vive separada.
 Finanzas vive separada.
 
 Así podremos agregar nuevos módulos en el futuro sin romper los existentes.
+
+AGREGAR SIEMPRE:
+
+Motivo
+
+Decisión
+
+Consecuencias
+
+Fecha
+
+Estado
