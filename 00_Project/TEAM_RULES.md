@@ -199,4 +199,29 @@ Push
 Cerrar ENT
 ---
 
+# Regla 20 — Checklist obligatorio de cierre de Entregable
+
+Ningún Blueprint puede marcarse como "✅ Finalizado" sin que, en el mismo momento, se actualicen estos tres documentos:
+
+
+1. Blueprint correspondiente → sección "Estado" con fecha y confirmación de commit/push.
+2. PROJECT_STATUS.md → "Última ENT finalizada" y "Blueprint activo" (apuntando ya al siguiente).
+3. CHANGELOG → entrada de la entrega cerrada.
+
+
+Un Blueprint y PROJECT_STATUS nunca deben decir cosas distintas sobre el mismo entregable. Si eso ocurre, ninguno de los dos se asume como verdad hasta que el CEO confirme cuál es el estado real (Regla de Oro, START_HERE.md).
+
+Checklist de cierre, en orden:
+
+[ ] Pruebas verificadas en navegador
+[ ] git status
+[ ] git add .
+[ ] git commit -m "..."
+[ ] git push
+[ ] Confirmación explícita del CEO (fecha)
+[ ] Blueprint → Estado: ✅ Finalizado + fecha
+[ ] PROJECT_STATUS.md actualizado en el mismo momento
+[ ] CHANGELOG actualizado
+
+
 Fin del Documento.

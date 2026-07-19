@@ -12,6 +12,7 @@ Lee primero los documentos en este orden:
 6. TEAM_RULES.md
 7. Blueprint activo
 8. ADR relacionadas
+9. ENTREPRENEUR_JOURNEY.md
 
 No utilices conversaciones anteriores como fuente de verdad. La única fuente oficial es la documentación del repositorio.
 
