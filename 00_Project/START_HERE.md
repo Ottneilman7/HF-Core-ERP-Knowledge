@@ -46,6 +46,7 @@ Aquí encontrarás la estructura completa de la documentación y la ubicación d
 
 Leer:
 
+ENTREPRENEUR_JOURNEY.md
 AI_CONTEXT.md
 
 Este documento define:
@@ -82,13 +83,14 @@ Nunca implementar cambios que contradigan una decisión arquitectónica previame
 
 # Paso 6 — Abrir el repositorio del código
 
-Repositorio:
+Repositorios:
 
-HF-CORE-ERP
+1. HF-CORE-ERP
 
-Toda la implementación vive en este repositorio.
+Todo el código e implementación vive en este repositorio.
 
-HF-Core-ERP-Knowledge únicamente documenta el proyecto.
+2. HF-Core-ERP-Knowledge 
+únicamente documenta el proyecto.
 
 ---
 
