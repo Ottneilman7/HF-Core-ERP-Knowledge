@@ -21,9 +21,11 @@ Registrar su empresa.
 Configurar moneda.
 Definir impuestos.
 Crear usuarios.
-Registrar productos.
-Registrar materias primas.
-Registrar clientes.
+Registrar productos a Vender
+Registrar las recetas BOM de cada producto (su materias primas, que puede ser un subproducto).
+Registrar clientes (definir si es contado/credito, persona natural o juridica, Agente de retencion al 75% o 100%, etc)
+Mejorar sus canales de promoción en las diferentes RRSS
+Recomendaciones de lo que puede hacer para mejorar su produccion y rentabilidad (Buscar clientes, programar limpiezas y control del negocio, etc)
 
 Eso ya nos dice qué pantallas necesita el MVP.
 
@@ -35,22 +37,21 @@ El emprendedor llega al negocio.
 
 No abre "Inventario".
 
-Abre el ERP.
+Abre el ERP. En la página de inicio con un mensaje Motivador diario y con un mensaje: 
 
-El sistema debería responder automáticamente:
+Buenos días X (Otto).
+¿Qué vas a hacer Hoy?
 
-Buenos días Otto.
+Hoy tienes: (recordatorios y sugerencias)
 
-Hoy tienes:
-
-3 pedidos pendientes.
+3 pedidos pendientes 
 Inventario crítico de avena.
 Debes producir 24 barras Recovery.
 Tienes 2 clientes sin atender.
 Hoy vencen 3 cuentas por cobrar.
 Tu margen cayó un 4 % esta semana.
 
-Ese es el Dashboard.
+Eso en la pantalla principal, seguido más abajo de los botones y fichas de producir, vender, cobrar, comprar, promocionar, tal y cmo ya se tiene hasta el momento en la Pagina inicio Honestly Foods.
 
 No gráficos bonitos.
 
@@ -76,7 +77,11 @@ Decide qué producir.
 
 ↓
 
-Revisa inventario.
+Coloca en la sección Produccion lo que va a producir y recibe la respuesta de las cantidades de materia prima a sacar para iniciar la produccion.
+
+↓
+
+La App le dice si está bajo el inventario y si debe comprar mercancía.
 
 ↓
 
@@ -84,7 +89,7 @@ Genera orden de producción.
 
 ↓
 
-Producción termina.
+Producción termina y registra la producción en sus formatos y en la app
 
 ↓
 
