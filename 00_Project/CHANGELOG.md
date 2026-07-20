@@ -1,3 +1,29 @@
+## v0.0.10 (pendiente de confirmar versión)
+
+## ENT-015 19/07/2026 — Configuración (BP-016)
+
+### Contexto
+
+Auditoría del proyecto (AUDITORIA-MVP-EIF.md) detectó que el Flujo 1 del verdadero MVP ("Configurar el negocio") nunca se construyó, pese a que Catálogo/Producción/Decisiones ya existían. Se prioriza antes de continuar con Compras/Ventas/Finanzas.
+
+### Agregado
+
+- models/Company.ts
+- models/BusinessParameters.ts
+- models/TaxConfig.ts
+- services/configService.ts (getCompany, saveCompany, isCompanyConfigured, getParameters, saveParameters, getTaxConfig, saveTaxConfig) — primera implementación real de BP-015 Fase 1 (localStorage), limitada a Configuración.
+- services/configService.test.ts (5 casos)
+- contexts/ConfigContext.tsx
+- pages/ConfigPage.tsx (Empresa, Parámetros, Impuestos)
+- BP-016-Configuracion.md
+- AUDITORIA-MVP-EIF.md (docs/project)
+
+### Pendiente antes de cerrar ENT-015
+
+⚠️ Checklist de Regla 20: integrar al repo real, `npx vitest run`, ruta `/config` en AppRouter, `<ConfigProvider>` en la raíz de la app, entrada en Sidebar, prueba en navegador, confirmación del CEO, commit + push.
+
+---  
+
 # v0.0.8
 
 ## ENT-008 20260714
