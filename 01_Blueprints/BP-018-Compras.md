@@ -1,6 +1,4 @@
-# BP-018
-
-Compras (Proveedores, Órdenes de Compra, Recepción, Actualización de Costos)
+# BP-018  Compras (Proveedores, Órdenes de Compra, Recepción, Actualización de Costos)
 
 Versión: 1.0
 Última actualización: 19/07/2026
@@ -25,9 +23,11 @@ Que el emprendedor pueda registrar a quién le compra, qué pidió y, al recibir
 
 **Recibir actualiza el costo, no lo promedia.** Si el mismo proveedor (u otro) vende la misma materia prima más cara o más barata, `unitCost` pasa a ser el del pedido que se acaba de recibir. Costeo promedio ponderado queda registrado como mejora futura (Backlog) — el 80/20 de "saber cuánto me está costando ahora" no lo necesita todavía.
 
-## ⚠️ Inconsistencia temporal aceptada (ver ADR-005, sección Consecuencias)
+## ⚠️ Inconsistencia temporal — RESUELTA (adenda 19/07/2026)
 
-`ProductionPage`/`ProductionSimulator` siguen leyendo `data/rawMaterials.ts` directamente — **no ven todavía** el stock actualizado por una compra recibida aquí. Es una decisión deliberada para no reabrir código de Producción ya cerrado y probado (BP-014) dentro de esta entrega. Backlog: migrar Producción a `rawMaterialInventoryService.getEffectiveRawMaterials()` en la próxima sesión que la toque, para que el número de "cuánto tengo" sea el mismo en toda la app.
+ProductionPage.tsx migrado de import { rawMaterials } from "../data/rawMaterials" a getEffectiveRawMaterials() (llamada dentro de handleCalculate, no una vez al montar — así siempre lee el stock vigente, incluyendo lo recibido en Compras). Cambio de una línea de import + una constante local, sin tocar la lógica de productionCalculatorService.
+
+ProductionSimulator.tsx no requirió cambio: ya recibía rawMaterials como prop — es responsabilidad de quien lo use (RecipesPage) decidir la fuente. Nota: /recipes no está registrada en el router desde BP-013, por lo que este componente hoy no es alcanzable desde la UI; no es código muerto, está inactivo a propósito (la fórmula no se expone al emprendedor).
 
 ## Fuera de alcance (Backlog explícito)
 
@@ -47,7 +47,7 @@ Que el emprendedor pueda registrar a quién le compra, qué pidió y, al recibir
 
 ## Estado
 
-🟡 En desarrollo — código y pruebas listos, pendiente checklist arriba.
+✅ Finalizado.
 
 ## Próximo paso natural
 
