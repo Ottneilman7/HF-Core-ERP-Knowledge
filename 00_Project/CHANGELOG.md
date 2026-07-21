@@ -1,3 +1,23 @@
+## ENT-019 19/07/2026 — Cobranza (BP-020)
+Agregado
+* models/Payment.ts
+* services/paymentService.ts (getPayments, getPaymentsByCustomer, registerPayment) — reutiliza customerBalanceService.adjustBalance (BP-019) con monto negativo.
+* services/paymentService.test.ts (6 casos)
+* pages/FinancePage.tsx (ruta /finance; construida con FormInput/FormSelect/FormButton de BP-017)
+* BP-020-Cobranza.md
+
+🎉 Cierre de ciclo
+Con Cobranza, el ciclo completo del verdadero MVP queda operativo: Configurar → Catálogo → Comprar → Producir (con puente manual, ADR-006) → Vender → Cobrar.
+
+Backlog registrado (no bloqueante)
+* Producción Fase 2 (BP-014): siguiente prioridad — cierra el puente manual de inventario de producto terminado.
+* Fecha de vencimiento en Sale (crédito) + alertas de facturas vencidas en el Centro de Decisiones.
+* Validación de creditLimit en Ventas.
+Pendiente antes de cerrar ENT-019
+
+Listo Checklist
+---
+
 ## v0.0.10 (pendiente de confirmar versión)
 
 ## ENT-015 19/07/2026 — Configuración (BP-016)
