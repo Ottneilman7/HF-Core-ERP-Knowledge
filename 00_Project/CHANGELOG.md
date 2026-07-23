@@ -1,3 +1,57 @@
+## ENT-022 20/07/2026 — Marketing (BP-022)
+
+### Contexto
+
+Último módulo de los 8 flujos de EL-Verdadero-MVP-EIF.md. Decisión del CEO: enfoque operativo (constancia + estrategia básica + recordatorios), sin campo de red social por publicación todavía — registrado en Backlog.
+
+### Agregado
+
+- models/MarketingStrategy.ts
+- models/MarketingPost.ts
+- services/marketingService.ts (getStrategy, saveStrategy, getPosts, createPost, setPostStatus, getSuggestions) — estrategia con valores por defecto ya poblados (2/semana, 5 pilares sugeridos).
+- services/marketingService.test.ts (8 casos)
+- pages/MarketingPage.tsx (ruta /marketing; construida con FormInput/FormButton de BP-017)
+- BP-022-Marketing.md
+
+### Backlog registrado (no bloqueante)
+
+- Campo de red social por publicación.
+- Métricas reales de alcance/engagement.
+- Generación de contenido con IA.
+
+### 🎉 Hito: MVP completo (8 de 8 flujos)
+
+Configurar (BP-016) → Catálogo (previo) → Comprar (BP-018) → Producir (BP-014/021) → Vender (BP-019) → Cobrar (BP-020) → Promocionar (BP-022) → Decidir (Centro de Decisiones, previo). El Backlog restante son mejoras sobre un MVP funcional, no huecos del MVP.
+
+### Pendiente antes de cerrar ENT-022
+
+⚠️ Checklist de Regla 20: integrar al repo real, `npx vitest run`, reemplazar ComingSoonPage por MarketingPage en `/marketing` (AppRouter.tsx), prueba en navegador, confirmación del CEO, commit + push.
+
+## ENT-021 20/07/2026 — Compra de emergencia de semielaborados (ADR-007)
+
+### Contexto
+
+El CEO, probando el checklist de BP-021, compró por error 400g de "Mantequilla de Maní (DEPRECADA)" — expuso dos cosas: (1) el desplegable de Compras no filtraba materia prima inactiva, y (2) una necesidad real: poder comprar Granola/Peanut Butter ya hechas en una emergencia.
+
+### Modificado
+
+- models/PurchaseOrder.ts: `PurchaseOrderItem` ahora acepta `rawMaterialId` O `componentRecipeId` (mismo patrón dual que `RecipeItem`, ADR-004).
+- services/purchaseService.ts: `createPurchaseOrder` valida que cada ítem tenga exactamente uno de los dos campos; `receivePurchaseOrder` distingue el tipo y aplica el efecto correcto (`rawMaterialInventoryService.receiveStock` o `recipeStockService.increaseStock`).
+- services/purchaseService.test.ts: +3 casos (semielaborado de emergencia, validación de ítem inválido, validación de ítem con ambos campos).
+- pages/PurchasesPage.tsx: selector "¿Qué estás comprando?" (Materia prima / Semielaborado ya hecho); el desplegable de materia prima ahora filtra `active: true` (corrige el bug original).
+- ADR-007-CompraEmergenciaSemielaborados.md
+
+### Dato a limpiar manualmente (no automatizado)
+
+La compra de prueba de 400g de Mantequilla de Maní deprecada (id "3") quedó en `localStorage`, sin efecto real. Limpieza opcional vía consola del navegador (ver conversación de soporte).
+
+### Pendiente antes de cerrar ENT-021
+
+⚠️ Checklist de Regla 20: integrar al repo real (reemplaza `PurchaseOrder.ts`, `purchaseService.ts` + test, `PurchasesPage.tsx`), `npx vitest run`, prueba en navegador (comprar Peanut Butter como semielaborado de emergencia y confirmar que suma a su stock, no a materia prima), confirmación del CEO, commit + push.
+ 
+ Listo!! Ya probado por CEO Otto Manrique con la Regla 20
+---
+
 ## ENT-019 19/07/2026 — Cobranza (BP-020)
 Agregado
 * models/Payment.ts
